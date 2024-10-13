@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Prevents scrolling */
+    background-color: #0d0d0d; /* Dark background */
+    color: white;
+}
+/* Header Section for Website Title and Link */
+header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out title, buttons, and link */
+    padding: 10px 20px;
+    background-color: #151515;
+    box-shadow: 0 0 15px rgba(0, 255, 251, 0.8);
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00FFFB;
+    flex: 1; /* Allow title to take space */
+    text-align: center; /* Center the title */
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Smaller gap between buttons */
+    flex: 1; /* Allow button container to take space */
+}
+.rect-button {
+    width: 80px; /* Smaller width */
+    height: 25px;  /* Reduced height for thinner buttons */
+    border-radius: 8px;
+    border: 2px solid #00FFFB; /* Neon border */
+    background: linear-gradient(145deg, #0e0e0e, #252525); /* Futuristic gradient */
+    color: #00FFFB;
+    font-size: 10px;  /* Reduced font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 255, 251, 0.8), inset 0 0 15px rgba(0, 255, 251, 0.5); /* Neon glow */
+    transition: all 0.3s ease-in-out;
+}
+.rect-button:hover {
+    background: #00FFFB; /* Glowing hover effect */
+    color: #0d0d0d;
+    box-shadow: 0 0 30px rgba(0, 255, 251, 1), inset 0 0 30px rgba(0, 255, 251, 1);
+}
+.link-page {
+    font-size: 14px;
+    color: #00FFFB;
+    flex: 1; /* Allow link page to take space */
+    text-align: center; /* Center the link */
+}
+.link-page a {
+    text-decoration: none;
+    color: #00FFFB;
+    transition: color 0.3s;
+}
+.link-page a:hover {
+    color: #00d9d9;
+}
+.frame-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    flex: 1; /* Makes the grid take the remaining space */
+    padding: 10px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.video-control {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.video-control input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.video-control button {
+    width: 100px; /* Smaller width */
+    height: 30px; /* Reduced height */
+    border-radius: 10px;
+    border: 2px solid #00FFFB; /* Neon border */
+    background: linear-gradient(145deg, #0e0e0e, #252525); /* Futuristic gradient */
+    color: #00FFFB;
+    font-size: 10px; /* Smaller font size */
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 255, 251, 0.8), inset 0 0 15px rgba(0, 255, 251, 0.5); /* Neon glow */
+    transition: all 0.3s ease-in-out;
+}

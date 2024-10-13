@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Stream Dashboard</title>
+    <link rel="stylesheet" href="styles10.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="title">Jtec</div>
+        <div class="button-container">
+            <button class="rect-button" onclick="controlAllVideos('play')">Start All</button>
+            <button class="rect-button" onclick="controlAllVideos('pause')">Pause All</button>
+            <button class="rect-button" onclick="refreshAllVideos()">Refresh</button>
+            <button class="rect-button" onclick="muteAllVideos()">Mute All</button>
+            <button class="rect-button" onclick="unmuteAllVideos()">Unmute</button>
+            <button class="rect-button" onclick="toggleFullscreen()">Fullscreen</button> <!-- Fullscreen toggle button -->
+        </div>
+        <div class="link-page">
+            <a href="https://www.example.com" target="_blank">Visit My Page</a>
+        </div>
+    </header>
+
+    <!-- YouTube Iframes -->
+    <div class="frame-container">
+        <iframe id="iframe1" class="youtube-frame" src="https://www.youtube.com/embed/RMetYAX1ecw?enablejsapi=1" allow="autoplay; encrypted-media"></iframe>
+        <iframe id="iframe2" class="youtube-frame" src="https://www.youtube.com/embed/kHoKhL56KZ0?enablejsapi=1" allow="autoplay; encrypted-media"></iframe>
+        <iframe id="iframe3" class="youtube-frame" src="https://www.youtube.com/embed/YYusap6uFdo?enablejsapi=1" allow="autoplay; encrypted-media"></iframe>
+        <iframe id="iframe4" class="youtube-frame" src="https://www.youtube.com/embed/CGD9XIgCMHk?enablejsapi=1" allow="autoplay; encrypted-media"></iframe>
+    </div>
+
+    <!-- Video Control Section -->
+    <div class="video-control">
+        <input type="text" id="newVideoUrl" placeholder="Enter YouTube video URL">
+        <button onclick="changeVideo(1)">Change Video 1</button>
+        <button onclick="changeVideo(2)">Change Video 2</button>
+        <button onclick="changeVideo(3)">Change Video 3</button>
+        <button onclick="changeVideo(4)">Change Video 4</button>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="script.js"></script> <!-- Link to JS file -->
+</body>
+</html>
